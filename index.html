@@ -1,90 +1,531 @@
-<html>
-  <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
-    <link
-      rel="stylesheet"
-      as="style"
-      onload="this.rel='stylesheet'"
-      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Work+Sans%3Awght%40400%3B500%3B700%3B900"
-    />
-
-    <title>my portfolio</title>
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
-
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  </head>
-  <body>
-    <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden" style='font-family: "Work Sans", "Noto Sans", sans-serif;'>
-      <div class="layout-container flex h-full grow flex-col">
-        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f0f2f5] px-10 py-3">
-          <div class="flex items-center gap-4 text-[#111418]">
-            <div class="size-4">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_6_319)">
-                  <path
-                    d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
-                    fill="currentColor"
-                  ></path>
-                </g>
-                <defs>
-                  <clipPath id="clip0_6_319"><rect width="48" height="48" fill="white"></rect></clipPath>
-                </defs>
-              </svg>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shameer - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">SHAMEER</div>
+            <ul class="nav-menu">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#education">EDUCATION</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <h2 class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em]">Portfolio</h2>
-          </div>
-          <div class="flex flex-1 justify-end gap-8">
-            <div class="flex items-center gap-9">
-              <a class="text-[#111418] text-sm font-medium leading-normal" href="#">Home</a>
-              <a class="text-[#111418] text-sm font-medium leading-normal" href="#">About</a>
-              <a class="text-[#111418] text-sm font-medium leading-normal" href="#">Projects</a>
-              <a class="text-[#111418] text-sm font-medium leading-normal" href="#">Contact</a>
-            </div>
-            <div
-              class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
-              style='background-image: url("assets/myphoto.jpg");''
-            ></div>
-          </div>
-        </header>
-        <div class="px-40 flex flex-1 justify-center py-5">
-          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-            <div class="@container">
-              <div class="@[480px]:p-4">
-                <div
-                  class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-start justify-end px-4 pb-10 @[480px]:px-10"
-                  style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBnM4ERTAtzAmJConoy8UEuaG_42pWqgtOTaxwZ7hQBi8ZTjSsPqzcJHG9ne7Y-T3VUO2hR46YdqO8trS1-614vQy_-OFK8x-iUkLoSUyGZQMwZiB3dT5vzyEWi7bBLb-DPHyKDu0smvIGhIZuuanQySrGCdv9UA5pI0e0kQHNO-g-IDKzOWGc5pnLuVZsOiqVHN52xK0j-ifJxeKL8gdidgSxs2UNNZATtRqzRiAMpkq4-M9NZvX-Sed6GUrZhESmpbvrqEkVj9gA");'
-                >
-                  <div class="flex flex-col gap-2 text-left">
-                    <h1
-                      class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
-                    >
-                      Hi, I'm A.Mohamed shameer
-                    </h1>
-                    <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
-                    I am an engineering student currently studying at Rajalakshmi Institute of Technology, pursuing Electronics and Communication Engineering. I am eager to gain knowledge and develop skills in the technical field.
-                    </h2>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </body>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="geometric-pattern">
+                <div class="line-group left">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <div class="line-group right">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="center-glow"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="greeting">Hi, I'm Shameer</div>
+            <div class="hero-title-container">
+                <div class="year">2024</div>
+                <div class="subtitle">ELECTRONICS & AI</div>
+                <div class="main-title">ENGINEER</div>
+            </div>
+            <div class="hero-description">
+                I'm a 2nd-year Electronics and Communication Engineering student at Rajalakshmi Institute of Technology, 
+                passionate about AI, IoT, and web development. I love building projects that combine hardware and intelligent software to solve real-world problems.
+            </div>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn-primary">
+                    <i class="fas fa-code"></i>
+                    View Projects
+                </a>
+                <a href="#" onclick="downloadResume()" class="btn-secondary">
+                    <i class="fas fa-download"></i>
+                    Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="section-underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-card">
+                    <div class="about-text">
+                        <p>Hi, I'm Shameer, a 2nd-year Electronics and Communication Engineering student at Rajalakshmi Institute of Technology.</p>
+                        
+                        <p>I'm passionate about AI, IoT, and web development, with a strong interest in blending electronics and intelligent software. My journey started with curiosity about how technology can solve everyday challenges, and today I'm building projects that bring that vision to life.</p>
+                        
+                        <div class="highlights">
+                            <h3>Project Highlights</h3>
+                            <div class="highlight-grid">
+                                <div class="highlight-item">
+                                    <div class="highlight-icon">🚘</div>
+                                    <div class="highlight-text">
+                                        <strong>Driver Drowsiness Detection</strong>
+                                        <span>Real-time safety monitoring with ESP32 & OpenCV</span>
+                                    </div>
+                                </div>
+                                <div class="highlight-item">
+                                    <div class="highlight-icon">🌱</div>
+                                    <div class="highlight-text">
+                                        <strong>AgriLink Platform</strong>
+                                        <span>AI-powered farming solutions & marketplace</span>
+                                    </div>
+                                </div>
+                                <div class="highlight-item">
+                                    <div class="highlight-icon">🏥</div>
+                                    <div class="highlight-text">
+                                        <strong>Prescription Scanner</strong>
+                                        <span>AI tool for prescription interpretation</span>
+                                    </div>
+                                </div>
+                                <div class="highlight-item">
+                                    <div class="highlight-icon">⚖️</div>
+                                    <div class="highlight-text">
+                                        <strong>AI Lawyer Bot</strong>
+                                        <span>Legal assistant with conversational AI</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mission-statement">
+                            <div class="mission-icon">🎯</div>
+                            <div class="mission-text">
+                                <strong>Mission:</strong> To become an innovative engineer who bridges the gap between hardware and AI-driven applications.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>Skills & Technology</h2>
+                <div class="section-underline"></div>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">💻</div>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C/C++</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">⚡</div>
+                        <h3>Frameworks & Libraries</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">Streamlit</span>
+                        <span class="skill-tag">Next.js</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag">OpenCV</span>
+                        <span class="skill-tag">MediaPipe</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">🤖</div>
+                        <h3>AI/ML Tools</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">Hugging Face</span>
+                        <span class="skill-tag">YOLO</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">Computer Vision</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">🔧</div>
+                        <h3>IoT & Hardware</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">ESP32</span>
+                        <span class="skill-tag">Arduino</span>
+                        <span class="skill-tag">RFID</span>
+                        <span class="skill-tag">Sensors</span>
+                        <span class="skill-tag">OLED</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">☁️</div>
+                        <h3>Cloud & Database</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Firebase</span>
+                        <span class="skill-tag">Supabase</span>
+                        <span class="skill-tag">Google Cloud</span>
+                        <span class="skill-tag">Git</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <div class="section-underline"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🚘</div>
+                        <div class="project-status">Active</div>
+                    </div>
+                    <h3>Driver Drowsiness Detection System</h3>
+                    <p>A real-time driver safety monitoring system using ESP32, OpenCV, and MediaPipe. Tracks eye movements and triggers alerts when signs of drowsiness are detected.</p>
+                    <div class="project-tech">
+                        <span>ESP32</span>
+                        <span>OpenCV</span>
+                        <span>MediaPipe</span>
+                        <span>Python</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Shameer2006/driver-drowsiness-detector-using-streamlit" class="project-link">
+                            <i class="fab fa-github"></i>
+                            Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Demo
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🛏️</div>
+                        <div class="project-status">Live</div>
+                    </div>
+                    <h3>hostel-management </h3>
+                    <p>A comprehensive hostel management application built with React, TypeScript, and Capacitor for cross-platform deployment. The system provides separate interfaces for students and administrators to manage hostel operations efficiently.</p>
+                    <div class="project-tech">
+                        <span>Next.js</span>
+                        <span>Supabase</span>
+                        <span>Google Cloud</span>
+                        <span>AI/ML</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Shameer2006/hostel-management" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i>
+                            Code
+                        </a>
+                        <a href="https://github.com/Shameer2006/hostel-management" target="_blank" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Demo
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🏥</div>
+                        <div class="project-status">Beta</div>
+                    </div>
+                    <h3>Doctor Prescription Scanner</h3>
+                    <p>A web-based AI tool that scans and interprets doctor prescriptions for better readability and accessibility. Helps patients and pharmacists avoid errors.</p>
+                    <div class="project-tech">
+                        <span>FastAPI</span>
+                        <span>OpenCV</span>
+                        <span>OCR</span>
+                        <span>NLP</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Shameer2006/medicode" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i>
+                            Code
+                        </a>
+                        <a href="https://medicode4.netlify.app/." target="_blank" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Demo
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">⚖️</div>
+                        <div class="project-status">Active</div>
+                    </div>
+                    <h3>AI Lawyer Bot</h3>
+                    <p>A legal assistant website that explains laws and rights in simple terms using AI. Built with FastAPI, Firebase, and Gemini API for conversational intelligence.</p>
+                    <div class="project-tech">
+                        <span>FastAPI</span>
+                        <span>Firebase</span>
+                        <span>Gemini API</span>
+                        <span>NLP</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Shameer2006/lawbot" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i>
+                            Code
+                        </a>
+                        <a href="https://github.com/Shameer2006/lawbot" target="_blank" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <h2>Education & Experience</h2>
+                <div class="section-underline"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <h3>Electronics & Communication Engineering</h3>
+                            <span class="timeline-date">2023 - Present</span>
+                        </div>
+                        <div class="timeline-content">
+                            <p>Rajalakshmi Institute of Technology, Chennai</p>
+                            <span class="timeline-status">2nd Year Student</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <h3>Higher Secondary Education (12th Grade)</h3>
+                            <span class="timeline-date">2023 - 2024</span>
+                        </div>
+                        <div class="timeline-content">
+                            <p>Kuylappalayam Higher Secondary School</p>
+                            <span class="timeline-status">Science Stream</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <h3>Secondary Education (10th Grade)</h3>
+                            <span class="timeline-date">2021 - 2022</span>
+                        </div>
+                        <div class="timeline-content">
+                            <p>Nirvana High School</p>
+                            <span class="timeline-status">Completed</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <h3>Software Development Intern</h3>
+                            <span class="timeline-date">2025</span>
+                        </div>
+                        <div class="timeline-content">
+                            <p>Tender Software Solutions</p>
+                            <span class="timeline-status">Real-world project experience</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <h3>AI Solutions Intern</h3>
+                            <span class="timeline-date">2025</span>
+                        </div>
+                        <div class="timeline-content">
+                            <p>1M1B Foundation</p>
+                            <span class="timeline-status">Social impact AI projects</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="achievements">
+                <h3>🏆 Key Achievements</h3>
+                <div class="achievement-grid">
+                    <div class="achievement-item">
+                        <div class="achievement-number">4+</div>
+                        <div class="achievement-text">AI & IoT Projects</div>
+                    </div>
+                    <div class="achievement-item">
+                        <div class="achievement-number">2</div>
+                        <div class="achievement-text">Industry Internships</div>
+                    </div>
+                    <div class="achievement-item">
+                        <div class="achievement-number">10+</div>
+                        <div class="achievement-text">Technologies Mastered</div>
+                    </div>
+                    <div class="achievement-item">
+                        <div class="achievement-number">100%</div>
+                        <div class="achievement-text">Project Success Rate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <div class="section-underline"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3>Let's Connect!</h3>
+                        <p>I'm always interested in discussing new opportunities, collaborating on projects, or just having a chat about technology and innovation.</p>
+                        
+                        <div class="contact-methods">
+                            <a href="mailto:shameer0rit@gmail.com" class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="method-info">
+                                    <span class="method-label">Email</span>
+                                    <span class="method-value">shameer0rit@gmail.com</span>
+                                </div>
+                            </a>
+                            
+                            <a href="https://www.linkedin.com/in/mohamed-shameer-37957932b/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B%2FBnagGf2R6i%2FlSELQYTVYg%3D%3D" target="_blank" class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </div>
+                                <div class="method-info">
+                                    <span class="method-label">LinkedIn</span>
+                                    <span class="method-value">Connect with me</span>
+                                </div>
+                            </a>
+                            
+                            <a href="https://github.com/Shameer2006" target="_blank" class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <div class="method-info">
+                                    <span class="method-label">GitHub</span>
+                                    <span class="method-value">Check out my code</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>Made with <i class="fas fa-heart"></i> by Shameer</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const links = document.querySelectorAll('header a');
-    links.forEach(link => {
-      const text = link.textContent.trim().toLowerCase();
-      if (text === 'home') {
-        link.href = 'index.html'; // home page
-      } else if (text === 'about') {
-        link.href = 'about.html';
-      } else if (text === 'projects') {
-        link.href = 'projects.html';
-      } else if (text === 'contact') {
-        link.href = 'contact.html';
-      }
-    });
-  });
-</script>
